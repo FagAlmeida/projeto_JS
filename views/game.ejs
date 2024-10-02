@@ -1,0 +1,14 @@
+<% include layout %>
+<div class="container">
+    <h1>Sala de Jogo: <%= roomCode %></h1>
+    <h2>Jogadores:</h2>
+    <ul>
+        <% room.players.forEach(player => { %>
+            <li><%= player.user.username %>: <%= player.totalWater %>ml</li>
+        <% }) %>
+    </ul>
+    <form action="/add-water" method="POST">
+        <input type="number" name="ml" placeholder="Adicionar ml de água" required>
+        <button type="submit">Adicionar Água</button>
+    </form>
+</div>

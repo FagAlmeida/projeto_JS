@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 22px);
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+}
